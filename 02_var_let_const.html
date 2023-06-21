@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var let and Const</title>
+</head>
+<body>
+    <script type="module">
+        console.log("var, let and const in javascript");
+
+        /*
+         1. var is globally scoped variable but let and const are block scoped
+
+         2. var can updates & redeclared within its scope
+
+         3. let can be update but not redeclared 
+         
+         4. const can neither be updated nor redeclared
+         */
+        
+
+        var a = "hasnain";
+        let b =  34;
+        var c = true;
+        var d = null;
+        var e = undefined;
+
+        {
+            var c = false
+            console.log(c)
+        }
+        console.log(c)
+
+
+        {
+            let b = 99;
+           console.log(b);
+        }
+
+        console.log(b);
+
+
+        const author = "hasnain";
+        // author = "Ali" => throw an error because of const 
+        console.log(author)
+    </script>
+</body>
+</html>
