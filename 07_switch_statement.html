@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Statement</title>
+  </head>
+  <body>
+    <script>
+      console.log("Switch Statement in JavaScript");
+
+      // Print a message to indicate the purpose of the program
+      console.log("Switch Statement in JavaScript");
+
+      // Take user input for the name and convert it to lowercase
+      let name = prompt("Enter your name");
+      name = name.toLowerCase();
+
+      // Use a switch statement to check the value of the name variable
+      switch (name) {
+        // If the name is "ali", print the corresponding message
+        case "ali":
+          console.log("You are my friend!");
+          break;
+
+        // If the name is "sufiyan", print the corresponding message
+        case "sufiyan":
+          console.log("You are my neighbour");
+          break;
+
+        // If the name is "hasnain", print the corresponding message
+        case "hasnain":
+          console.log("You are my relative");
+          break;
+
+        // If the name doesn't match any of the cases above, print the default message
+        default:
+          console.log("Unknown person");
+          break;
+      }
+
+      
+
+      let a = prompt("Enter your number");
+      // let a = prompt("Enter your age")  this is a shorthand of parsing a string into a number
+
+      // Convert the input 'a' to an integer using parseInt()
+      a = parseInt(a);
+
+      // Print the data type of 'a' to the console to verify that it's a number
+      console.log(typeof a);
+
+      // Use a switch statement with 'true' as the expression to check different conditions based on the value of 'a'
+      switch (true) {
+        // If 'a' is less than 0, print "Its negative value"
+        case a < 0:
+          console.log("Its negative value");
+          break;
+
+        // If 'a' is greater than 0, print "Its positive value"
+        case a > 0:
+          console.log("Its positive value");
+          break;
+
+        // If 'a' is neither less than nor greater than 0, i.e., it's 0, print "Its a zero"
+        default:
+          console.log("Its a zero");
+          break;
+      }
+    </script>
+  </body>
+</html>
