@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Operators</title>
+  </head>
+  <body>
+    <script>
+      console.log("Conditional Operators in JavaScript");
+
+      let a = prompt("Enter your age");
+      // let a = prompt("Enter your age")  this is a shorthand of parsing a string into a number
+      a = parseInt(a);
+      console.log(typeof a);
+
+      // if the condition is true  that the block of if executed
+      if (a < 0) {
+        alert("your are not eligible");
+      }
+      //  if you have more than one condition so you can use else if
+      else if (a < 18 && a >= 8) {
+        alert("your are slected when you are 18");
+      } else if (a >= 18) {
+        alert("your are eligible");
+      }
+      //  use as aoptional condition that executes when the condition is false
+      else {
+        alert("your are kid");
+      }
+    </script>
+  </body>
+</html>
